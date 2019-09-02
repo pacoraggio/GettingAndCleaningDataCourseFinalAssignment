@@ -125,6 +125,10 @@ FrequencyBodyGyroscopeJerkMagnitudeSTD
 Strategy for cleaning the data
 ==============================
 
+This is the strategy used for cleaning the data set. It is implemented
+in the run\_analysis.R script. It uses the R `dplyr` and `data.table`
+libraries.
+
 Merging Databases
 -----------------
 
