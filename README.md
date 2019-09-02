@@ -20,18 +20,11 @@ as for point 4)
 
 The repository contains the following folder/files:
 
-README.md
+README.md: contains the information about scope and repository content
 
-  contains the information about scope and repository content
+CodeBook.md: a R Markdown Notebook describing the variables, the data and any transformation performed to achieve the assignment goals
 
-CodeBook.md
-
-  a R Markdown Notebook describing the variables, the data and any transformation
-  performed to achieve the assignment goals
-
-activity_labels.txt 
-
-  a .txt file containing the different activities recorded in the experiment features.txt
+activity_labels.txt: a .txt file containing the different activities recorded in the experiment features.txt
 
   a .txt file containing the features names of the recorded variables of the experiments
 
