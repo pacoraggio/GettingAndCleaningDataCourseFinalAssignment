@@ -68,8 +68,9 @@ names(df_test)[1] <- "SubjectID"
 names(df_train)[2] <- "Activity"
 names(df_test)[2] <- "Activity"
 
-# writing both dataframe on file for a sanity check
 # now I bind the row to obtain the whole data.frame
+# writing dataframe dimension on file for 
+# checking the dimension are matching
 
 df <- rbind(df_train, df_test)
 dim(df)
@@ -102,15 +103,18 @@ names(df_reduced)<-gsub("-std\\()", "STD", names(df_reduced), ignore.case = TRUE
 names(df_reduced)<-gsub("angle", "Angle", names(df_reduced))
 names(df_reduced)<-gsub("gravity", "Gravity", names(df_reduced))
 
+# Step 5 of assignment. 
+
+# The Activity and SubjectID are coerced to factors
+
 df_reduced$Activity <- as.factor(df_reduced$Activity)
 df_reduced$SubjectID <- as.factor(df_reduced$SubjectID)
 
 # Writing the reduced dataset into a csv file
 write.csv(df_reduced, './results/df_reduced.csv')
 
+# Creating the tidy dataset and writing to a .txt and .csv files
+
 tidyDF_reduced <- tidyDF_reduced[order(tidyDF_reduced$Subject,tidyDF_reduced$Activity),]
 write.table(tidyDF_reduced, file = "./results/TidyDF_reduced.txt", row.names = FALSE)
 write.csv(tidyDF_reduced, './results/TidyDF_reduced.csv', row.names = FALSE)
-
-
-
