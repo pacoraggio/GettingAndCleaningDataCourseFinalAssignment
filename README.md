@@ -24,13 +24,11 @@ README.md: contains the information about scope and repository content
 
 CodeBook.md: a R Markdown Notebook describing the variables, the data and any transformation performed to achieve the assignment goals
 
-activity_labels.txt: a .txt file containing the different activities recorded in the experiment features.txt
+activity_labels.txt: a .txt file containing the different activities recorded in the 
 
-  a .txt file containing the features names of the recorded variables of the experiments
+experiment_features.txt: a .txt file containing the features names of the recorded variables of the experiments
 
-features_info.txt
-
-  a .txt file contining the information about how features were selected 
+features_info.txt: a .txt file contining the information about how features were selected 
 
 'train/X_train.txt' is the Training set.
 
@@ -40,9 +38,7 @@ features_info.txt
 
 'test/y_test.txt': Test labels.
 
-run_analysis.R
-  
-  a .R script performing the analysis - see CodeBook.Rmd for further details
+run_analysis.R: a .R script performing the analysis - see CodeBook.Rmd for further details
 
 'result':
   
